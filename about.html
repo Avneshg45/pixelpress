@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About PixelPress</title>
+<meta name="description" content="PixelPress is a set of browser-based image tools that never upload your files.">
+<link rel="canonical" href="https://pixelpress.vercel.app/about.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="index.html" aria-label="PixelPress home"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4" stroke="#7c5cff"/><path d="M12 7v7" stroke="#c6ff4d"/><path d="M8.5 11.5 12 15l3.5-3.5" stroke="#c6ff4d"/></svg> PixelPress</a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="compress.html">Compress</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="passport-photo.html">Passport photo</a>
+    <a href="about.html" aria-current="page">About</a>
+  </nav>
+  <button class="icon-btn" id="theme" aria-label="Toggle colour theme">◐</button>
+  <button class="icon-btn" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+</div></header>
+<main id="main" class="wrap prose pt">
+  <h1>About PixelPress</h1>
+  <p>PixelPress provides fast browser-based image compression, format conversion, resizing, and passport photo tools. Everything runs locally inside your browser tab.</p>
+  <p>Most online image utilities upload your photos to remote servers, queue them, and wrap them in heavy ads. With PixelPress, your files never leave your device — there is no upload endpoint, and closing the tab clears memory.</p>
+  <h2>How it works</h2>
+  <p>Images are decoded and re-encoded locally using the browser File API and HTML5 Canvas. HEIC files use an on-demand decoder loaded in the browser.</p>
+  <h2>Format notes</h2>
+  <p>JPG does not support transparency. Converting PNG to JPG fills transparent areas with white by design. Choose PNG if you need transparency.</p>
+  <h2>How we fund the site</h2>
+  <p>Display ads keep the tools free with no watermarks, no file limits, and no accounts.</p>
+  <h2 id="contact">Contact</h2>
+  <div class="contact-box">
+    <span class="mono" id="contactAddr">Click reveal to copy email</span>
+    <button class="btn ghost sm" type="button" data-contact-reveal data-contact-target="contactAddr">Reveal &amp; Copy</button>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div class="col"><strong>PixelPress</strong><span>Private client-side image tools.</span></div>
+  <div class="col"><a href="compress.html">Compress</a><a href="convert.html">Convert</a><a href="resize.html">Resize</a><a href="passport-photo.html">Passport photo</a></div>
+  <div class="col"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="about.html#contact">Contact</a></div>
+</div></footer>
+<script src="assets/app.js"></script></body></html>

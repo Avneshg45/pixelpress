@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PixelPress — Free Image Compressor, Converter &amp; Resizer (No Upload)</title>
+<meta name="description" content="Compress, convert and resize images free in your browser. Files never leave your device. JPG, PNG, WebP, HEIC. No signup, no watermark, no file-size limit.">
+<link rel="canonical" href="https://pixelpress.vercel.app/">
+<meta property="og:title" content="PixelPress — compress images on your device">
+<meta property="og:description" content="Free browser tools for compressing, converting and resizing images. Nothing gets uploaded.">
+<meta property="og:image" content="og.png">
+<meta property="og:url" content="https://pixelpress.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"PixelPress","url":"https://pixelpress.vercel.app/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Browser-based image compression, conversion and resizing tools that run entirely on-device."}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="index.html" aria-label="PixelPress home"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4" stroke="#7c5cff"/><path d="M12 7v7" stroke="#c6ff4d"/><path d="M8.5 11.5 12 15l3.5-3.5" stroke="#c6ff4d"/></svg> PixelPress</a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="compress.html">Compress</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="passport-photo.html">Passport photo</a>
+    <a href="about.html">About</a>
+  </nav>
+  <button class="icon-btn" id="theme" aria-label="Toggle colour theme">◐</button>
+  <button class="icon-btn" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+</div></header>
+
+<main id="main">
+  <section class="hero"><div class="wrap">
+    <span class="tag mono"><i></i> 100% on-device · nothing uploaded</span>
+    <h1>Shrink images.<br>Not your <em>privacy</em>.</h1>
+    <p class="lede">Free image tools that run inside your browser tab. Your photos never touch a server — no uploads, no queues, no watermark, no account.</p>
+    <div class="row mt">
+      <a class="btn lime" href="compress.html">Compress an image</a>
+      <a class="btn ghost" href="convert.html">Convert HEIC → JPG</a>
+    </div>
+    <p class="note">Runs offline once loaded · Unlimited files · Works on iPhone &amp; Android</p>
+  </div></section>
+
+  <section class="wrap pt"><div class="ad" role="complementary" aria-label="Advertisement">
+    <span class="ad-tag mono">ad</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div></section>
+
+  <section class="wrap pb">
+    <h2 class="sec-h">Pick a tool</h2>
+    <p class="sec-sub">Four tools, built for speed and privacy.</p>
+    <div class="grid">
+      <a class="card" href="compress.html"><div class="ico">↓</div><h3>Compress</h3>
+        <p>Hit an exact KB or MB target for forms and portals. Quality stays under your control.</p></a>
+      <a class="card" href="convert.html"><div class="ico">⇄</div><h3>Convert</h3>
+        <p>HEIC, PNG, WebP, JPG — batch convert with one click. Fix iPhone photos instantly.</p></a>
+      <a class="card" href="resize.html"><div class="ico">⤢</div><h3>Resize</h3>
+        <p>Pixels, cm, mm or inches. For thumbnails, banners and upload limits.</p></a>
+      <a class="card" href="passport-photo.html"><div class="ico">▣</div><h3>Passport photo</h3>
+        <p>Official sizes at 300 DPI, plus a printable 4×6 sheet for the studio.</p></a>
+    </div>
+  </section>
+
+  <section class="wrap sec">
+    <h2 class="sec-h">Why PixelPress</h2>
+    <div class="grid">
+      <div class="card"><h3>Files stay local</h3><p>Decoding and encoding happen in your tab via Canvas. Close the tab and the data is gone.</p></div>
+      <div class="card"><h3>No limits, no watermark</h3><p>Batch of 40? 80&nbsp;MB JPEG? Fine. Output is clean and full resolution.</p></div>
+      <div class="card"><h3>Live crop preview</h3><p>Drag and zoom on the real image before you commit. You see exactly what gets saved.</p></div>
+      <div class="card"><h3>Nothing to install</h3><p>No app store, no extension, no signup. Same on desktop and phone.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap pb"><div class="ad" role="complementary" aria-label="Advertisement">
+    <span class="ad-tag mono">ad</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div></section>
+
+  <section class="wrap prose pb">
+    <h2>Frequently asked</h2>
+    <details><summary>Are my images really not uploaded?</summary><p>Correct. There is no upload endpoint. The page reads the file with the browser's File API, draws it to a canvas and re-encodes it locally. Verify in DevTools → Network while a job runs.</p></details>
+    <details><summary>Is there a file-size limit?</summary><p>80&nbsp;MB per file. Beyond that it's your device's memory, not us.</p></details>
+    <details><summary>Does compressing hurt quality?</summary><p>Any lossy encoder trades quality for size. Use the quality slider, or WebP at 80%+ for a near-invisible result at a fraction of the size.</p></details>
+    <details><summary>Why HEIC?</summary><p>iPhones save HEIC by default and many websites reject it. The converter decodes HEIC in-browser and outputs a standard JPG.</p></details>
+    <details><summary>Is it free for commercial work?</summary><p>Yes. Output files are yours with no attribution required.</p></details>
+  </section>
+</main>
+
+<footer><div class="wrap foot">
+  <div class="col"><strong>PixelPress</strong><span>Private client-side image tools.</span></div>
+  <div class="col"><a href="compress.html">Compress</a><a href="convert.html">Convert</a><a href="resize.html">Resize</a><a href="passport-photo.html">Passport photo</a></div>
+  <div class="col"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="about.html#contact">Contact</a></div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>
